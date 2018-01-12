@@ -1,7 +1,5 @@
 package mc.mockito;
 
-//By using static import it's possible to call static members
-//for example methods and fields of a class directly without specifying the class
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.verify;
@@ -40,9 +38,6 @@ public class MockTest {
 	
 	@Test
 	public void Test1() throws Exception{
-		
-		Bean2 bean2 = new Bean2();
-		bean2.setBean1(bean1Mock);
 		
 		when(bean1Mock.getName()).thenReturn("hello");
 		
