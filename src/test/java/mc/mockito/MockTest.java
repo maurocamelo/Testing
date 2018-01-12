@@ -1,5 +1,7 @@
 package mc.mockito;
 
+//By using static import it's possible to call static members
+//for example methods and fields of a class directly without specifying the class
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.verify;
